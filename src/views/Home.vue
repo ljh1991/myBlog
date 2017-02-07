@@ -4,7 +4,7 @@
         <my-footer></my-footer>
         <!-- 这里是页面内容区 -->
         <div class="content">
-            <div class="content-block" v-gesture:swipeDown="handle($event, 'swipeDown')">Home page</div>
+            <div class="content-block">Home page</div>
         </div>
     </div>
 </template>
@@ -18,9 +18,7 @@ export default{
 		}
 	},
 	methods:{
-		handle:(e,str)=>{
-			e.target.innerHTML += ("  " + str)
-		}
+		
 	},
 	components:{
 		'myHeader':Header,
